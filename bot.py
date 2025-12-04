@@ -304,7 +304,7 @@ async def ver_belen(interaction: discord.Interaction):
     pending_requests = db.get_pending_requests_for_belen(belen['id'])
     
     embed = discord.Embed(
-        title=f"🏠 Belén: {belen['nombre']}",
+        title=f"🏠 Belén: {belen['nombre']} (ID: {belen['id']})",
         description=belen.get('descripcion') or "Sin descripción",
         color=discord.Color.green()
     )

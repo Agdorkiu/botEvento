@@ -1,3 +1,4 @@
+print(">>> Bot arrancando...")
 import os
 import discord
 from discord import app_commands
@@ -761,3 +762,4 @@ if __name__ == "__main__":
         print("Error: DISCORD_TOKEN no está configurado")
         exit(1)
     bot.run(DISCORD_TOKEN)
+    print(">>> client.run ejecutándose")
